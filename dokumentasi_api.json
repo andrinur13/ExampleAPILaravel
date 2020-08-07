@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "43fd5020-1e3c-4e58-960c-7f795cf1d5ec",
+		"name": "Mahasiswa_laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/mahasiswa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/mahasiswa",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mahasiswa"
+					]
+				},
+				"description": "Mengambil data mahasiswa"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/tambah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"Subhan Hadi\",\n    \"nim\": \"1800025042\",\n    \"prodi\": \"Ilmu Hukum\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/tambah",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tambah"
+					]
+				},
+				"description": "menambah data mahasiswa.\nmembutuhkan request :\nnama, nim, prodi"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/edit/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nama\": \"Dimas Yusuf Arianto\",\n    \"nim\": \"1700019202\",\n    \"prodi\": \"Teknik Industri\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/edit/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"edit",
+						"2"
+					]
+				},
+				"description": "edit data mahasiswa, memerlukan id dan request:\nnama\nnim\nprodi"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/delete/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/delete/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete",
+						""
+					]
+				},
+				"description": "untuk delete data mahasiswa\n\nmemerlukan request body id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/mahasiswa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/mahasiswa/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mahasiswa",
+						"2"
+					]
+				},
+				"description": "menampilkan data mahasiswa berdasarkan id, memerlukan params id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
